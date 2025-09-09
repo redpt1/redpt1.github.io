@@ -1,18 +1,17 @@
 ---
 permalink: /
-title: "Hongbo | Homepage"
+title: "Hongbo Liu"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hongbo Liu
-======
+
 
 
 Research Interests
-======
+------
 
 
 Education
