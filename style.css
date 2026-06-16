@@ -181,17 +181,7 @@ a:hover { color: var(--accent-light); }
   gap: 12px;
 }
 
-.hero-avatar {
-  width: 120px;
-  height: 150px;
-  border-radius: 14px;
-  overflow: hidden;
-  flex-shrink: 0;
-  margin-bottom: 12px;
-  box-shadow: 0 4px 16px rgba(0,0,0,.08);
-  border: 2px solid var(--border);
-  background: var(--surface);
-}
+.hero-avatar { display: none; }
 
 .hero-avatar img {
   width: 100%;
@@ -666,7 +656,6 @@ a:hover { color: var(--accent-light); }
 @media (max-width: 640px) {
   .hero { padding: 40px 0 28px; }
   .hero-name { font-size: 28px; }
-  .hero-avatar { width: 90px; height: 112px; border-radius: 10px; }
   .nav-inner { padding: 10px 16px; }
   .nav-links a { padding: 4px 8px; font-size: 12.5px; }
   .nav-links { gap: 2px; }
