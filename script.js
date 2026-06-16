@@ -65,9 +65,13 @@ function renderProfile() {
   document.getElementById("hero-email-text").textContent = p.email;
   document.getElementById("hero-email").href = "mailto:" + p.email;
 
-  // Avatar initials
-  const initials = name.split(/\s+/).map(w => w[0]).join("").toUpperCase().slice(0, 2);
-  document.getElementById("hero-avatar").textContent = initials;
+  // Avatar: use image if present, otherwise show initials
+  const avatarEl = document.getElementById("hero-avatar");
+  const avatarImg = document.getElementById("hero-avatar-img");
+  if (!avatarImg) {
+    const initials = name.split(/\s+/).map(w => w[0]).join("").toUpperCase().slice(0, 2);
+    avatarEl.textContent = initials;
+  }
 
   // Page title
   document.title = name + " — Academic Homepage";
