@@ -9,12 +9,16 @@ const SITE_CONTENT = {
 
   /* ---------- 基本信息 ---------- */
   profile: {
-    name:    { en: "Hongbo Liu", zh: "刘泓伯" },
+    name:    { en: "Liu Hongbo", zh: "刘泓伯" },
     title:   {
-      en: "Research Assistant @ The Hong Kong Polytechnic University",
-      zh: "研究助理 @ 香港理工大学"
+      en: "Master of Philosophy @ The Hong Kong Polytechnic University",
+      zh: "哲学硕士 @ 香港理工大学"
     },
     email: "hong-bo.liu@connect.polyu.hk",
+    supervisor: {
+      en: "Supervisor: Prof. Jiannong Cao",
+      zh: "导师：曹建农 教授"
+    },
     // 可选：添加更多社交链接（取消注释并填入 URL）
     links: [
       // { label: "Google Scholar", url: "https://scholar.google.com/...", icon: "scholar"  },
@@ -144,37 +148,12 @@ const SITE_CONTENT = {
   /* ---------- 竞赛经历 ---------- */
   competitions: {
     heading: { en: "Competitions & Awards", zh: "竞赛与获奖" },
-    items: [
-      {
-        title: {
-          en: "Mathematical Contest in Modeling (MCM)",
-          zh: "美国大学生数学建模竞赛",
-        },
-        details: [
-          { en: "Team Leader — responsible for modeling and thesis writing",
-            zh: "队长 — 负责建模与论文撰写" },
-          { en: "Awarded Successful Participant",
-            zh: "获 Successful Participant 奖" },
-        ],
-      },
-      {
-        title: {
-          en: "Student Innovation & Entrepreneurship Competition",
-          zh: "大学生创新创业实践竞赛",
-        },
-        details: [
-          { en: "Project: Visualization App for 5G Base Station Config & O&M Data (with Huawei)",
-            zh: "项目：基于 5G 基站运维配置参数的可视化 APP（与华为合作）" },
-          { en: "Developed Android app for real-time monitoring; responsible for data visualization",
-            zh: "开发 Android 实时监控应用；负责数据可视化编码" },
-        ],
-      },
-    ],
+    items: [],
   },
 
   /* ---------- 页脚 ---------- */
   footer: {
-    en: "© 2025 Hongbo Liu. All rights reserved.",
+    en: "© 2025 Liu Hongbo. All rights reserved.",
     zh: "© 2025 刘泓伯 版权所有",
   },
 };

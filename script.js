@@ -46,6 +46,22 @@ function renderProfile() {
   document.getElementById("nav-logo").textContent = name;
   document.getElementById("hero-name").textContent = name;
   document.getElementById("hero-title").textContent = t(p.title);
+
+  // Supervisor (optional field)
+  let supervisorEl = document.getElementById("hero-supervisor");
+  if (p.supervisor) {
+    if (!supervisorEl) {
+      supervisorEl = document.createElement("p");
+      supervisorEl.id = "hero-supervisor";
+      supervisorEl.className = "hero-supervisor";
+      document.getElementById("hero-title").after(supervisorEl);
+    }
+    supervisorEl.textContent = t(p.supervisor);
+    supervisorEl.style.display = "";
+  } else if (supervisorEl) {
+    supervisorEl.style.display = "none";
+  }
+
   document.getElementById("hero-email-text").textContent = p.email;
   document.getElementById("hero-email").href = "mailto:" + p.email;
 

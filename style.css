@@ -164,6 +164,14 @@ a:hover { color: var(--color-accent); text-decoration: underline; }
   line-height: 1.5;
 }
 
+.hero-supervisor {
+  font-size: 15px;
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
 .hero-email {
   display: inline-flex;
   align-items: center;
