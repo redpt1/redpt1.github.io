@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hongbo Liu — Academic Homepage</title>
+  <meta name="description" content="Hongbo Liu — Research Assistant at The Hong Kong Polytechnic University. Research: Blockchain, Web3, Edge Computing, Decentralized AI." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Favicon (academic cap emoji as SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="site-header">
+    <nav class="nav-inner">
+      <span class="nav-logo" id="nav-logo">Hongbo Liu</span>
+      <ul class="nav-links">
+        <li><a href="#education"  data-i18n="nav.education">Education</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#publications" data-i18n="nav.publications">Publications</a></li>
+        <li><a href="#competitions" data-i18n="nav.competitions">Awards</a></li>
+        <li>
+          <div class="lang-toggle">
+            <button class="lang-btn active" id="btn-en" onclick="switchLang('en')">EN</button>
+            <button class="lang-btn"        id="btn-zh" onclick="switchLang('zh')">中文</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN ==================== -->
+  <div class="page-wrapper">
+
+    <!-- Hero / Profile -->
+    <section class="hero fade-in" id="hero">
+      <div class="hero-avatar" id="hero-avatar">HL</div>
+      <h1 class="hero-name" id="hero-name">Hongbo Liu</h1>
+      <p  class="hero-title" id="hero-title">Research Assistant @ The Hong Kong Polytechnic University</p>
+      <a  class="hero-email" id="hero-email" href="mailto:hong-bo.liu@connect.polyu.hk">
+        <!-- mail icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="M22 7l-10 7L2 7"/>
+        </svg>
+        <span id="hero-email-text">hong-bo.liu@connect.polyu.hk</span>
+      </a>
+      <div class="hero-links" id="hero-links"></div>
+    </section>
+
+    <!-- Research Interests -->
+    <section class="section fade-in" id="research-section">
+      <h2 class="section-heading" id="research-heading">Research Interests</h2>
+      <div class="research-tags" id="research-tags"></div>
+    </section>
+
+    <!-- Education -->
+    <section class="section fade-in" id="education">
+      <h2 class="section-heading" id="edu-heading">Education</h2>
+      <div class="timeline" id="edu-list"></div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="section fade-in" id="experience">
+      <h2 class="section-heading" id="exp-heading">Work Experience</h2>
+      <div class="timeline" id="exp-list"></div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section fade-in" id="publications">
+      <h2 class="section-heading" id="pub-heading">Publications</h2>
+      <div class="pub-list" id="pub-list"></div>
+    </section>
+
+    <!-- Competitions -->
+    <section class="section fade-in" id="competitions">
+      <h2 class="section-heading" id="comp-heading">Competitions &amp; Awards</h2>
+      <div class="comp-list" id="comp-list"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p id="footer-text">© 2025 Hongbo Liu. All rights reserved.</p>
+    </footer>
+
+  </div><!-- /page-wrapper -->
+
+  <!-- Scripts: content FIRST, then renderer -->
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
