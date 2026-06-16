@@ -46,11 +46,7 @@ const SITE_CONTENT = {
         period: { en: "Sep 2022 – Oct 2023", zh: "2022.09 – 2023.10" },
         school: { en: "The Hong Kong Polytechnic University", zh: "香港理工大学" },
         degree: { en: "M.Sc. in Blockchain Technology",       zh: "区块链技术 理学硕士" },
-        details: [
-          { en: "GPA: 3.26 / 4.3", zh: "GPA: 3.26 / 4.3" },
-          { en: "Scholarship: BlockSec Blockchain Security Award",
-            zh: "奖学金：BlockSec 区块链安全奖" },
-        ],
+        details: [],
       },
       {
         period: { en: "Sep 2018 – Jun 2022", zh: "2018.09 – 2022.06" },
@@ -58,11 +54,7 @@ const SITE_CONTENT = {
                   zh: "北京邮电大学" },
         degree: { en: "B.Eng. in Computer Science and Technology",
                   zh: "计算机科学与技术 工学学士" },
-        details: [
-          { en: "GPA: 3.49 / 4.0 (85.27 / 100)", zh: "GPA: 3.49 / 4.0 (85.27 / 100)" },
-          { en: "Scholarship: Third-class Scholarship, 2019",
-            zh: "奖学金：2019 年三等奖学金" },
-        ],
+        details: [],
       },
     ],
   },
