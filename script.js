@@ -150,14 +150,17 @@ function renderPublications() {
 
   const list = document.getElementById("pub-list");
   list.innerHTML = pub.items.map((item, i) => {
+    // Publications always show in English (not translated)
+    const titleText = esc(item.title.en || item.title);
+    const venueText = esc(item.venue.en || item.venue);
     const titleHTML = item.link
-      ? `<a href="${esc(item.link)}" target="_blank" rel="noopener">${esc(t(item.title))}</a>`
-      : esc(t(item.title));
+      ? `<a href="${esc(item.link)}" target="_blank" rel="noopener">${titleText}</a>`
+      : titleText;
 
     return `
     <div class="pub-item${item.highlight ? " highlight" : ""}">
       <div class="pub-title">${titleHTML}</div>
-      <div class="pub-venue">${esc(t(item.venue))}</div>
+      <div class="pub-venue">${venueText}</div>
       <div class="pub-authors">${esc(item.authors)}</div>
     </div>`;
   }).join("");
